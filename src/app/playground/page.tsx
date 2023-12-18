@@ -36,6 +36,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { ProfileForm } from "@/components/playground/PlaygroundForm"
 
 
 
@@ -155,6 +156,12 @@ export default function PlaygroundPage() {
       >
         <p>Label</p>
         <Label htmlFor="email">Your email address</Label>
+      </div>
+      <div
+        className="m-3"
+      >
+        <p>Form</p>
+        <ProfileForm />
       </div>
     </>
   )
