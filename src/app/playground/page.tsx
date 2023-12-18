@@ -35,6 +35,7 @@ import {
 } from "@/components/ui/sheet"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 
 
@@ -148,6 +149,12 @@ export default function PlaygroundPage() {
       >
         <p>Input</p>
         <Input type="email" placeholder="Email" />
+      </div>
+      <div
+        className="m-3"
+      >
+        <p>Label</p>
+        <Label htmlFor="email">Your email address</Label>
       </div>
     </>
   )
