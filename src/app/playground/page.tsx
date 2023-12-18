@@ -4,22 +4,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Button } from '@/components/ui/button'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Button } from '@/components/ui/button'
+
 
 
 export default function PlaygroundPage() {
   return (
     <>
       <h1>PlayGround</h1>
-      <div>
+      <div
+        className="m-3"
+      >
         <p>Button</p>
         <Button
         >
           Default
         </Button>
       </div>
-      <div>
+      <div
+        className="m-3"
+      >
         <p>accordion</p>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
@@ -30,7 +35,9 @@ export default function PlaygroundPage() {
           </AccordionItem>
         </Accordion>
       </div>
-      <div>
+      <div
+        className="m-3"
+      >
         <p>Alert</p>
         <Alert>
           <AlertTitle>Heads up!</AlertTitle>
@@ -38,7 +45,6 @@ export default function PlaygroundPage() {
             You can add components and dependencies to your app using the cli.
           </AlertDescription>
         </Alert>
-
       </div>
     </>
   )
