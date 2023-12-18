@@ -34,7 +34,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
+import { Input } from "@/components/ui/input"
 
 
 
@@ -142,7 +142,12 @@ export default function PlaygroundPage() {
           <TabsContent value="account">Make changes to your account here.</TabsContent>
           <TabsContent value="password">Change your password here.</TabsContent>
         </Tabs>
-
+      </div>
+      <div
+        className="m-3"
+      >
+        <p>Input</p>
+        <Input type="email" placeholder="Email" />
       </div>
     </>
   )
