@@ -25,6 +25,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 
 
@@ -102,6 +111,23 @@ export default function PlaygroundPage() {
             <p>Card Footer</p>
           </CardFooter>
         </Card>
+      </div>
+      <div
+        className="m-3"
+      >
+        <p>Sheet</p>
+        <Sheet>
+          <SheetTrigger>Open</SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+              <SheetDescription>
+                This action cannot be undone. This will permanently delete your account
+                and remove your data from our servers.
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
       </div>
     </>
   )
