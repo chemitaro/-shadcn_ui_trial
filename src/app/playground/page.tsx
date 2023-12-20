@@ -45,6 +45,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { ToastButton } from "@/components/playground/ToastButton"
+import Link from 'next/link'
 
 
 
@@ -188,6 +190,19 @@ export default function PlaygroundPage() {
             </DialogHeader>
           </DialogContent>
         </Dialog>
+      </div>
+      <div
+        className="m-3"
+      >
+        <p>Toast Button</p>
+        <ToastButton />
+      </div>
+      <div>
+        <Link
+          href="/"
+        >
+          Home
+        </Link>
       </div>
     </>
   )
